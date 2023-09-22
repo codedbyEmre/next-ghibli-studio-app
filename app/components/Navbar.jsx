@@ -15,14 +15,14 @@ export default function Navbar() {
           <Image src={Logo} width={50} alt="Ghibli logo" quality={100} placeholder="blur" loading="lazy" />
           <h2 className="font-semibold sm:text-xl text-2xl capitalize ml-1">Next Ghibli</h2>
         </Link>
-        <ul className="flex items-center font-medium gap-4 sm:mt-0 mt-4 sm:text-base text-lg">
+        <div className="flex items-center font-medium gap-4 sm:mt-0 mt-4 sm:text-base text-lg">
           <Link className={pathname === '/' ? 'active-link ' : ''} href="/">
             Home
           </Link>
           <Link className={pathname === '/movies' ? 'active-link ' : ''} href="/movies">
             Movies
           </Link>
-        </ul>
+        </div>
       </div>
     </div>
   );
