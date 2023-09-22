@@ -1,7 +1,11 @@
+import Image from 'next/image';
+import LoadingImage from './../../components/logo.png';
+
 export default function loading() {
   return (
-    <main className="text-center">
-      <h2 className="text-blue-700 text-2xl">Loading...</h2>
+    <main className="flex flex-col justify-center items-center h-[40vh]">
+      <Image src={LoadingImage} width={100} quality={100} className="animate-bounce" />
+      <h2 className="text-blue-700 text-2xl tracking-wider mt-4">Loading...</h2>
     </main>
   );
 }
