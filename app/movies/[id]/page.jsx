@@ -34,7 +34,7 @@ export default async function MovieDetails({ params }) {
 
   return (
     <div
-      className="min-h-[60vh] p-6 text-white overflow-hidden rounded-md movie-details-card"
+      className="min-h-[55vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
       style={{
         backgroundImage: `url(${movie_banner})`,
         backgroundRepeat: 'none',
@@ -42,23 +42,27 @@ export default async function MovieDetails({ params }) {
         backgroundSize: 'cover'
       }}
     >
-      <h2 className="text-2xl mb-2">{title}</h2>
-      <h3 className="mb-1">{original_title}</h3>
-      <h3 className="mb-2">{original_title_romanised}</h3>
-      <div className="flex items-center gap-4 mb-4">
-        <span>{release_date}</span>
-        <span>{running_time} mins</span>
-        <span>{rt_score}</span>
-      </div>
-      <div>
-        Directors: <span className="font-medium ml-1">{director}</span>
-      </div>
-      <div className="mt-1">
-        Producers: <span className="font-medium ml-1">{producer}</span>
-      </div>
-      <div className="mt-4">
-        <h1 className="text-xl font-medium mb-1">Description</h1>
-        <p>{description}</p>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      <div className="relative">
+        <h2 className="text-2xl mb-2">{title}</h2>
+        <h3 className="mb-1">{original_title}</h3>
+        <h3 className="mb-2">{original_title_romanised}</h3>
+        <div className="flex items-center gap-4 mb-4">
+          <span>{release_date}</span>
+          <span>{running_time} mins</span>
+          <span>{rt_score}</span>
+        </div>
+        <div>
+          Directors: <span className="font-medium ml-1">{director}</span>
+        </div>
+        <div className="mt-1">
+          Producers: <span className="font-medium ml-1">{producer}</span>
+        </div>
+        <div className="mt-4">
+          <h1 className="text-xl font-medium mb-1">Description</h1>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );

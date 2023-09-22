@@ -13,16 +13,3 @@
 .active-link {
   @apply underline underline-offset-8 decoration-2;
 }
-
-.movie-details-card {
-  position: relative;
-}
-
-.movie-details-card::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
