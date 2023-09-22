@@ -34,7 +34,7 @@ export default async function MovieDetails({ params }) {
 
   return (
     <div
-      className="min-h-[55vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
+      className="min-h-[45vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
       style={{
         backgroundImage: `url(${movie_banner})`,
         backgroundRepeat: 'none',
@@ -42,25 +42,31 @@ export default async function MovieDetails({ params }) {
         backgroundSize: 'cover'
       }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-700 opacity-[0.68]"></div>
 
-      <div className="relative">
-        <h2 className="text-2xl mb-2">{title}</h2>
+      <div className="relative text-lg">
+        <h2 className="text-3xl font-semibold mb-3">{title}</h2>
         <h3 className="mb-1">{original_title}</h3>
         <h3 className="mb-2">{original_title_romanised}</h3>
         <div className="flex items-center gap-4 mb-4">
-          <span>{release_date}</span>
-          <span>{running_time} mins</span>
-          <span>{rt_score}</span>
+          <p>
+            Year: <span className="font-semibold">{release_date}</span>
+          </p>
+          <p>
+            <span className="font-semibold">{running_time}</span> mins
+          </p>
+          <p>
+            Score: <span className="font-semibold">{rt_score}</span>
+          </p>
         </div>
         <div>
-          Directors: <span className="font-medium ml-1">{director}</span>
+          Directors: <span className="font-semibold ml-1">{director}</span>
         </div>
         <div className="mt-1">
-          Producers: <span className="font-medium ml-1">{producer}</span>
+          Producers: <span className="font-semibold ml-1">{producer}</span>
         </div>
         <div className="mt-4">
-          <h1 className="text-xl font-medium mb-1">Description</h1>
+          <h1 className="text-2xl font-semibold mb-1">Description</h1>
           <p>{description}</p>
         </div>
       </div>

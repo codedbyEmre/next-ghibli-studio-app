@@ -5,7 +5,7 @@ import Movie from './Movie';
 const getMovies = async () => {
   const res = await fetch('https://ghibliapi.vercel.app/films', {
     next: {
-      revalidate: 30
+      revalidate: 60
     }
   });
 
