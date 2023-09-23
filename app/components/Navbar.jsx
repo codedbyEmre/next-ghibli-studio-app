@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed w-full bg-blue-700 text-white z-10">
+    <div className="fixed w-full bg-blue-700 text-white border-b-blue-900 border-b-4 z-10">
       <div className="container flex sm:flex-row flex-col items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image src={Logo} width={50} alt="Ghibli logo" quality={100} placeholder="blur" loading="lazy" />

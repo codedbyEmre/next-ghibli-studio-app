@@ -2,8 +2,10 @@ import MovieList from './MovieList';
 
 export default function Movies() {
   return (
-    <>
-      <MovieList />
-    </>
+    <div className="sm:pt-20 pt-32">
+      <div className="container">
+        <MovieList />
+      </div>
+    </div>
   );
 }
