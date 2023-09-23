@@ -28,7 +28,10 @@ export default function Movie({ movie }) {
               Score: <span className="font-semibold">{rt_score}</span>
             </p>
           </div>
-          <Link href={`/movies/${id}`} className="bg-blue-600 text-white rounded text-sm p-2 font-medium mt-6">
+          <Link
+            href={`/movies/${id}`}
+            className="bg-blue-600 text-white rounded text-sm p-2 font-medium mt-6 hover:bg-blue-800 transition-colors duration-300"
+          >
             View Details
           </Link>
         </div>
