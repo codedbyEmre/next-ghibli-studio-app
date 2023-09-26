@@ -1,3 +1,4 @@
+import BackButton from '@/app/components/shared/BackButton';
 import { notFound } from 'next/navigation';
 
 const getMovie = async id => {
@@ -35,6 +36,9 @@ export default async function MovieDetails({ params }) {
   return (
     <div className="sm:pt-20 pt-32">
       <div className="container">
+        <div className="mt-4 mb-6 w-[6.5rem]">
+          <BackButton />
+        </div>
         <div
           className="min-h-[45vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
           style={{
