@@ -40,7 +40,7 @@ export default async function MovieDetails({ params }) {
           <BackButton />
         </div>
         <div
-          className="min-h-[45vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
+          className="min-h-[50vh] p-6 text-white overflow-hidden rounded-md movie-details-card relative"
           style={{
             backgroundImage: `url(${movie_banner})`,
             backgroundRepeat: 'none',
