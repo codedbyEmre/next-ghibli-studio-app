@@ -6,7 +6,7 @@ export default function Movie({ movie }) {
   return (
     <div className="movie-card">
       <div className="flex-1">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <img src={image} alt={title} width="100%" className="h-full object-cover" loading="lazy" />
       </div>
       <div className="flex-1 p-4 pb-6">
         <div className="flex flex-col items-start h-full justify-between">
