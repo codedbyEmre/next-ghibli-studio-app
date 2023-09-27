@@ -6,7 +6,7 @@ export default function page() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-600 opacity-[0.76]"></div>
 
       <div className="relative text-white text-center">
-        <div className="container sm:text-2xl text-xl">
+        <div className="container sm:text-2xl text-xl font-medium">
           <h2 className="sm:text-7xl text-5xl font-semibold sm:mb-16 mb-8 text-center">Your Magical Corner</h2>
           <p className="text-left">
             Embark on an enchanting journey where each Ghibli Studio movie is a gem waiting to be discovered. Prepare
